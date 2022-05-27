@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig in the 6-Dice</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <section class="pigInTheDice">
+        <!-- 다이스 굴리기 버튼 -->
+        <!-- 다이스 스탑 버튼 -->
+        <!-- 다이스 굴렸을 때 숫자 보여주기 -->
+        <!-- 최대 100까지 바1 -->
+        <!-- 최대 100까지 바2 (최종저장) -->
+        <!-- 유저 보여주기 -->
+
+        <div class="user">
+            <h1>유저</h1>
+            <div class="countBox">
+                <div class="count">
+                    <p>0</p>
+                </div>
+                <div class="progressBox">
+                    <div class="progressNow">
+                        <div class="charge" data-dice-value="0"></div>
+                    </div>
+                    <div class="progressTotal">
+                        <div class="charge" data-dice-value="0"></div>
+                    </div>
+                </div>
+                <div class="userValue">
+                    <div class="now">0%</div>
+                    <div class="total">0%</div>
+                </div>
+            </div>
+            <div class="buttonBox">
+                <button class="roll" onclick="diceRoll()">Roll</button>
+                <button class="stop" onclick="diceStop()">Stop</button>
+            </div>
+        </div>
+        <div class="computer">
+            <h1>컴퓨터1</h1>
+            <div class="countBox">
+                <div class="count">
+                    <p>0</p>
+                </div>
+                <div class="progressBox">
+                    <div class="progressNow">
+                        <div class="charge" data-dice-value="0"></div>
+                    </div>
+                    <div class="progressTotal">
+                        <div class="charge" data-dice-value="0"></div>
+                    </div>
+                </div>
+                <div class="ComputerValue">
+                    0
+                </div>
+            </div>
+        </div>
+        <div class="computer">
+            <h1>컴퓨터2</h1>
+            <div class="countBox">
+                <div class="count">
+                    <p>0</p>
+                </div>
+                <div class="progressBox">
+                    <div class="progressNow">
+                        <div class="charge" data-dice-value="0"></div>
+                    </div>
+                    <div class="progressTotal">
+                        <div class="charge" data-dice-value="0"></div>
+                    </div>
+                </div>
+                <div class="ComputerValue">
+                    0
+                </div>
+            </div>
+        </div>
+        <div class="computer">
+            <h1>컴퓨터3</h1>
+            <div class="countBox">
+                <div class="count">
+                    <p>0</p>
+                </div>
+                <div class="progressBox">
+                    <div class="progressNow">
+                        <div class="charge" data-dice-value="0"></div>
+                    </div>
+                    <div class="progressTotal">
+                        <div class="charge" data-dice-value="0"></div>
+                    </div>
+                </div>
+                <div class="ComputerValue">
+                    0
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="result"></div>
+    <script src="src/index.js"></script>
+</body>
+</html>
